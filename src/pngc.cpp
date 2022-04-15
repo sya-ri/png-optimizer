@@ -61,7 +61,7 @@ bool compressPNG(char* fileName){
     }
     else{
         char fileHeader[8];
-        const char fileSignature[] = { 137, 80, 78, 71, 13, 10, 26, 10 };
+        const char fileSignature[] = { (char)137, 80, 78, 71, 13, 10, 26, 10 };
         file.read(fileHeader, 8);
 
         // The first eight bytes of a PNG file should always contain the signature;
