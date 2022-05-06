@@ -136,7 +136,6 @@ int main(int argc, char* argv[])
             compressPNG(argv[i]);
         }
     }
-    cin.get();
     return 0;
 }
 
